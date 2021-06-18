@@ -101,3 +101,49 @@ nav ul li a {
         margin: 20px auto;
     }
 }
+
+/*--About--*/
+#about {
+    width: 100%;
+    padding: 70px 0;
+}
+.about-title {
+    text-align: center;
+    padding-bottom: 70px;
+}
+.about-title p {
+    margin: auto;
+    font-size: 20px;
+    color: #334d4d;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.about-title p::after {
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#789491,#fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.about-title h1 {
+    font-size: 50px;
+}
+.about-box {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.skills {
+    flex-basis: 50%;
+}
