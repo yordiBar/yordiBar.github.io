@@ -103,7 +103,7 @@ nav ul li a {
     }
 }
 
-/*--About--*/
+/*--ABOUT/SKILLS--*/
 #about {
     width: 100%;
     padding: 70px 0;
@@ -178,5 +178,84 @@ nav ul li a {
     }
     .skills-img {
         flex-basis: 100%;
+    }
+}
+
+/*---PROJECTS---*/
+#projects {
+    width: 100%;
+    padding: 70px 0;
+    background: #efefef;
+}
+.projects-box {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.single-project {
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+.single-project img {
+    width: 100%;
+    border-radius: 7px;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5), #669999);
+    opacity: 0;
+    transition: 0.8s;
+}
+.single-project:hover .overlay {
+    opacity: 1;
+}
+.project-desc {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 0.8s;
+    cursor: pointer;
+}
+hr {
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+.service-desc p {
+    font-size: 14px;
+}
+.single-project:hover .project-desc {
+    bottom: 30%;
+    opacity: 1;
+}
+@media screen and (max-width: 770px) {
+    .single-project {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .service-desc p {
+        font-size: 12px;
+    }
+    hr {
+        margin: 5px auto;
+    }
+    .single-project:hover .project-desc {
+        bottom: 25% !important;
     }
 }

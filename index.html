@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bart Rybak</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <section id="banner">
         <img src="images/IMG-20180104-WA0000-01.jpeg" class="logo">
@@ -36,11 +39,11 @@
         <img src="images/menu.png" id="menu">
     </div>
 
-    <!-- About -->
+    <!-- ABOUT/SKILLS SECTION -->
     <section id="about">
         <div class="about-title">
             <p>ABOUT ME</p>
-            <h1>SKILLS</h1>
+            <h1>Skills</h1>
         </div>
         <div class="about-box">
             <!--Languages-->
@@ -86,7 +89,7 @@
             <div class="skills-img">
                 <img src="/images/microsoft-sql-server-logo.png" alt="sqlserver">
                 <img src="/images/mysql-logo-2.png" alt="mysql">
-                <img src="/images/PostgreSQL-Logo.png" alt="postgresql">                
+                <img src="/images/PostgreSQL-Logo.png" alt="postgresql">
             </div>
             <div class="skills">
                 <!--Cloud-->
@@ -116,9 +119,64 @@
                 <img src="/images/tudub.png" alt="c-sharp">
             </div>
         </div>
-
     </section>
 
+    <!-- PROJECTS SECTION -->
+<section id="projects">
+    <div class="about-title">
+        <h1>My Projects</h1>
+    </div>
+    <div class="projects-box">
+        <div class="single-project">
+            <img src="images/markus-spiske-jG8nlwLRZTM-unsplash.jpg" alt="project_screenshot">
+            <div class="overlay"></div>
+            <div class="project-desc">
+                <h3>Holiday Tracker</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        <div class="single-project">
+            <img src="images/markus-spiske-jG8nlwLRZTM-unsplash.jpg" alt="project_screenshot">
+            <div class="overlay"></div>
+            <div class="project-desc">
+                <h3>Project Name</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        <div class="single-project">
+            <img src="images/markus-spiske-jG8nlwLRZTM-unsplash.jpg" alt="project_screenshot">
+            <div class="overlay"></div>
+            <div class="project-desc">
+                <h3>Project Name</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        <div class="single-project">
+            <img src="images/markus-spiske-jG8nlwLRZTM-unsplash.jpg" alt="project_screenshot">
+            <div class="overlay"></div>
+            <div class="project-desc">
+                <h3>Project Name</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+</section>
     <script>
         var menuBtn = document.getElementById("menuBtn")
         var menuBtn = document.getElementById("sideNav")
@@ -126,12 +184,12 @@
 
         sideNav.style.right = "-250px";
 
-        menuBtn.onclick = function(){
-            if(sideNav.style.right == "-250px"){
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
                 sideNav.style.right = "0";
                 menu.src = "images/close.png";
             }
-            else{
+            else {
                 sideNav.style.right = "-250px";
                 menu.src = "images/menu.png"
             }
@@ -139,4 +197,5 @@
     </script>
 
 </body>
+
 </html>
