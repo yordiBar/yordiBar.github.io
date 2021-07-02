@@ -22,7 +22,7 @@
             <h1>Hi, My name is Bart</h1>
             <p>I am a Web Developer</p>
             <div class="banner-btn">
-                <a href="#"><span></span>Read More</a>
+                <a href="#about"><span></span>About Me</a>
             </div>
         </div>
     </section>
@@ -31,7 +31,7 @@
         <nav>
             <ul>
                 <li><a href="#banner">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#footer">CONTACT</a></li>
                 <li><a href="https://github.com/yordiBar" target="_blank">MY GITHUB</a></li>
@@ -46,6 +46,13 @@
     <section id="about">
         <div class="about-title">
             <p>ABOUT ME</p>
+            <h1>Background</h1>
+            <hr>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.</h4>
+            <hr>
             <h1>Skills</h1>
         </div>
         <div class="about-box">
@@ -197,13 +204,14 @@
                 <h1>My CV</h1>
                 <a href="/documents/Bart_Rybak_CV.pdf" download>
                     <p>Click here to download my CV</p>
-                </a>                
+                </a>
             </div>
             <div class="footer-right">
                 <h1>Get in touch</h1>
-                <p>Dublin, Ireland<i class="fa fa-map-marker"></i></p>                
+                <p>Dublin, Ireland<i class="fa fa-map-marker"></i></p>
                 <!-- <p>Phone Number<i class="fa fa-phone"></i>00353 87 693 4401</p> -->
-                <p>Email<i class="fa fa-paper-plane"></i><a href="mailto:bart.dev@hotmail.com">bart.dev@hotmail.com</a></p>
+                <p>Email<i class="fa fa-paper-plane"></i><a href="mailto:bart.dev@hotmail.com">bart.dev@hotmail.com</a>
+                </p>
             </div>
         </div>
         <div class="social-links">
@@ -232,10 +240,10 @@
         }
 
         // All animations will take exactly 500ms
-var scroll = new SmoothScroll('a[href*="#"]', {
-	speed: 500,
-	speedAsDuration: true
-});
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 500,
+            speedAsDuration: true
+        });
     </script>
 
 </body>
