@@ -291,6 +291,10 @@ hr {
     text-decoration: none;
     color: #000;
 }
+.footer-left a {
+    text-decoration: none;
+    color: #000;
+}
 .footer-row h1 {
     margin: 10px 0;
 }
