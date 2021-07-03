@@ -78,6 +78,10 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
 }
+nav ul li a:hover {
+    text-decoration: none;
+    border-bottom: 3px #fff solid;
+}
 #menuBtn {
     width: 50px;
     height: 50px;
@@ -183,7 +187,10 @@ nav ul li a {
 }
 @media screen and (max-width: 770px) {
     .about-title h1 {
-        font-size: 35px;
+        font-size: 30px;
+    }
+    .about-title h4 {
+        font-size: 16px;
     }
     .skills {
         flex-basis: 100%;
@@ -300,9 +307,17 @@ hr {
     text-decoration: none;
     color: #000;
 }
+.footer-right a:hover {
+    text-decoration: none;
+    color: rgb(16, 99, 88);
+}
 .footer-left a {
     text-decoration: none;
     color: #000;
+}
+.footer-left a:hover {
+    text-decoration: none;
+    color: rgb(16, 99, 88);
 }
 .footer-row h1 {
     margin: 10px 0;
