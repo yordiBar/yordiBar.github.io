@@ -12,10 +12,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 
 <body>
+
+    <div class="menuBtn" id="menuBtn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <div class="closeBtn" id="closeBtn">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="menu">
+            <div class="item"><a href="#banner"><i class="fas fa-home"></i>Home</a></div>
+            <div class="item"><a href="#about"><i class="fas fa-info-circle"></i>About Me</a></div>
+            <div class="item"><a href="#projects"><i class="fas fa-project-diagram"></i>Projects</a></div>
+            <div class="item"><a href="#footer"><i class="fas fa-address-book"></i>Contact</a></div>
+            <div class="item"><a href="https://github.com/yordiBar" target="_blank"><i class="fab fa-github"></i>My Github</a></div>
+        </div>
+
+    </div>
+
     <section id="banner">
         <img src="images/logo-img1.jpg" class="logo">
         <div class="banner-text">
@@ -26,21 +45,6 @@
             </div>
         </div>
     </section>
-
-    <div id="sideNav">
-        <nav>
-            <ul>
-                <li><a href="#banner">HOME</a></li>
-                <li><a href="#about">ABOUT ME</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#footer">CONTACT</a></li>
-                <li><a href="https://github.com/yordiBar" target="_blank">MY GITHUB</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div id="menuBtn">
-        <img src="images/menu.png" id="menu">
-    </div>
 
     <!-- ABOUT/SKILLS SECTION -->
     <section id="about">
@@ -219,42 +223,42 @@
             </div>
             <div class="footer-right">
                 <h1>Get in touch</h1>
-                <p><i class="fa fa-map-marker"></i>Dublin, Ireland</p>
+                <p><i class="fas fa-map-pin"></i>Dublin, Ireland</p>
                 <!-- <p>Phone Number<i class="fa fa-phone"></i>00353 87 693 4401</p> -->
                 <p><i class="fa fa-paper-plane"></i><a href="mailto:bart.dev@hotmail.com">bart.dev@hotmail.com</a>
                 </p>
             </div>
         </div>
         <div class="social-links">
-            <a href="https://github.com/yordiBar" target="_blank"><i class="fa fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/bart-rybak/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/yordiBar" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/bart-rybak/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         </div>
     </section>
 
 
-    <script>
+    <script type="text/javascript">
         var menuBtn = document.getElementById("menuBtn")
-        var menuBtn = document.getElementById("sideNav")
-        var menuBtn = document.getElementById("menu")
+        var sidebar = document.getElementById("sidebar")
+        var closeBtn = document.getElementById("closeBtn")
 
-        sideNav.style.right = "-250px";
-
+        sidebar.style.left = "-100%";
         menuBtn.onclick = function () {
-            if (sideNav.style.right == "-250px") {
-                sideNav.style.right = "0";
-                menu.src = "images/close.png";
+            if (sidebar.style.left == "-100%") {
+                sidebar.style.left = "0";
             }
             else {
-                sideNav.style.right = "-250px";
-                menu.src = "images/menu.png"
+                sidebar.style.left = "-100%";
             }
         }
-
-        // All animations will take exactly 500ms
+        
+        //All animations will take exactly 500ms
         var scroll = new SmoothScroll('a[href*="#"]', {
             speed: 500,
             speedAsDuration: true
         });
+        closeBtn.onclick = function () {
+            sidebar.style.left = "-100%";
+        };
     </script>
 
 </body>
