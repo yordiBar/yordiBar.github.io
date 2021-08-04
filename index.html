@@ -30,11 +30,14 @@
             <div class="item"><a href="#about"><i class="fas fa-info-circle"></i>About Me</a></div>
             <div class="item"><a href="#projects"><i class="fas fa-project-diagram"></i>Projects</a></div>
             <div class="item"><a href="#footer"><i class="fas fa-address-book"></i>Contact</a></div>
-            <div class="item"><a href="https://github.com/yordiBar" target="_blank"><i class="fab fa-github"></i>My Github</a></div>
+            <div class="item"><a href="https://github.com/yordiBar" target="_blank"><i class="fab fa-github"></i>My
+                    Github</a></div>
         </div>
 
     </div>
-
+    <div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    </div>
     <section id="banner">
         <img src="images/logo-img1.jpg" class="logo">
         <div class="banner-text">
@@ -52,7 +55,9 @@
             <p>ABOUT ME</p>
             <h1>Background</h1>
             <hr>
-            <h4>I like to build things. I am passionate about all things IT and love learning new things. Graduted in 2020 from the Technological University Dublin with an Honours Degree (First Class Honours) in Computer Science. 
+            <h4>I like to build things. I am passionate about all things IT and love learning new things. Graduted in
+                2020 from the Technological University Dublin with an Honours Degree (First Class Honours) in Computer
+                Science.
                 Building web applications as a hobby, maybe as a profession one day...</h4>
             <hr>
             <h1>Skills</h1>
@@ -128,7 +133,7 @@
                 <img src="/images/Visual_Studio_Icon_2019.svg.png" alt="visualstudio">
             </div>
             <!--Cloud-->
-            <div class="skills">                
+            <div class="skills">
                 <h1>Cloud</i></h1>
                 <div class="skills-desc">
                     <div class="skills-icon">
@@ -143,7 +148,7 @@
                 <img src="/images/azure-fundamentals-600x600.png" alt="c-sharp">
             </div>
             <!--Awards-->
-            <div class="skills">                
+            <div class="skills">
                 <h1>Awards</h1>
                 <div class="skills-desc">
                     <div class="skills-icon">
@@ -192,7 +197,7 @@
                 <div class="project-desc">
                     <h3><a href="https://nerfed.azurewebsites.net/" target="_blank">Nerfed</a></h3>
                     <hr>
-                    <p>A simple website built for my son... Built two versions... 
+                    <p>A simple website built for my son... Built two versions...
                         Laravel and ASP.NET Core which is hosted on Azure</p>
                 </div>
             </div>
@@ -237,9 +242,10 @@
 
 
     <script type="text/javascript">
-        var menuBtn = document.getElementById("menuBtn")
-        var sidebar = document.getElementById("sidebar")
-        var closeBtn = document.getElementById("closeBtn")
+        var menuBtn = document.getElementById("menuBtn");
+        var sidebar = document.getElementById("sidebar");
+        var closeBtn = document.getElementById("closeBtn");
+        var mybutton = document.getElementById("myBtn");
 
         sidebar.style.left = "-100%";
         menuBtn.onclick = function () {
@@ -250,7 +256,7 @@
                 sidebar.style.left = "-100%";
             }
         }
-        
+
         //All animations will take exactly 500ms
         var scroll = new SmoothScroll('a[href*="#"]', {
             speed: 500,
@@ -259,6 +265,22 @@
         closeBtn.onclick = function () {
             sidebar.style.left = "-100%";
         };
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera            
+        }
     </script>
 
 </body>
