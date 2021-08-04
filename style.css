@@ -251,7 +251,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: auto;
+    margin: auto;    
 }
 .single-project {
     flex-basis: 48%;
@@ -260,6 +260,7 @@
     margin-bottom: 20px;
     color: #fff;
     position: relative;
+    box-shadow: 10px 10px 5px #ccc;
 }
 .single-project img {
     width: 100%;
