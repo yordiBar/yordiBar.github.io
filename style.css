@@ -155,7 +155,7 @@
 }
 .about-title {
     text-align: center;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
 }
 .about-title p {
     margin: auto;
@@ -181,6 +181,11 @@
 }
 .about-title h1 {
     font-size: 50px;
+}
+.about-skills h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 20px;
 }
 .about-title h4 {
     text-align: center;
@@ -228,6 +233,7 @@
 @media screen and (max-width: 770px) {
     .about-title h1 {
         font-size: 30px;
+        padding-top: 20px;
     }
     .about-title h4 {
         font-size: 16px;
@@ -237,6 +243,10 @@
     }
     .skills-img {
         flex-basis: 100%;
+        padding-bottom: 40px;
+    }
+    .about-skills h1 {
+        font-size: 30px;
     }
 }
 
