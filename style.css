@@ -191,13 +191,13 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 60%;
     font-size: 20px;
     display: flex;
     flex-wrap: wrap;
 }
 .about-box {
-    width: 80%;
+    width: 60%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -257,7 +257,7 @@
     background: #efefef;
 }
 .projects-box {
-    width: 80%;
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
