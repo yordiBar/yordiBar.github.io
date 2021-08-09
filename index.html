@@ -36,7 +36,7 @@
 
     </div>
     <div>
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+        <button onclick="scrollToTop()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
     </div>
     <section id="banner">
         <img src="images/logo-img1.jpg" class="logo">
@@ -59,7 +59,8 @@
                 2020 from the Technological University Dublin with an Honours Degree (First Class Honours) in Computer
                 Science.
                 Building web applications as a hobby, maybe as a profession one day...</h4>
-            <hr>
+        </div>
+        <div class="about-skills">
             <h1>Skills</h1>
         </div>
         <div class="about-box">
@@ -134,7 +135,7 @@
             </div>
             <!--Cloud-->
             <div class="skills">
-                <h1>Cloud</i></h1>
+                <h1>Cloud</h1>
                 <div class="skills-desc">
                     <div class="skills-icon">
                         <i class="fa fa-cloud"></i>
@@ -201,15 +202,6 @@
                         Laravel and ASP.NET Core which is hosted on Azure</p>
                 </div>
             </div>
-            <!-- <div class="single-project">
-                <img src="images/markus-spiske-jG8nlwLRZTM-unsplash.jpg" alt="project_screenshot">
-                <div class="overlay"></div>
-                <div class="project-desc">
-                    <h3>Coming Soon...</h3>
-                    <hr>
-                    <p>...</p>
-                </div>
-            </div> -->
         </div>
     </section>
 
@@ -229,7 +221,6 @@
             <div class="footer-right">
                 <h1>Get in touch</h1>
                 <p><i class="fas fa-map-pin"></i>Dublin, Ireland</p>
-                <!-- <p>Phone Number<i class="fa fa-phone"></i>00353 87 693 4401</p> -->
                 <p><i class="fa fa-paper-plane"></i><a href="mailto:bart.dev@hotmail.com">bart.dev@hotmail.com</a>
                 </p>
             </div>
@@ -268,6 +259,7 @@
 
         window.onscroll = function () { scrollFunction() };
 
+        // When user scrolls page down by 20px the "Top" button will appear
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 mybutton.style.display = "block";
@@ -276,10 +268,9 @@
             }
         }
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera            
+        // When the user clicks on the button, scroll smoothly to the top of the document
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});            
         }
     </script>
 
