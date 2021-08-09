@@ -308,7 +308,6 @@ nav ul li a:hover {
     position: absolute;
     top: 0;
     border-radius: 7px;
-    cursor: pointer;
     background: linear-gradient(rgba(0,0,0,0.5), #669999);
     opacity: 0;
     transition: 0.8s;
@@ -324,11 +323,12 @@ nav ul li a:hover {
     opacity: 0;
     transform: translateX(-50%);
     transition: 0.8s;
-    cursor: pointer;
+    
 }
 .project-desc h3 a {
     text-decoration: none;
-    color: #fff;
+    color: #fff;    
+    cursor: pointer;
 }
 hr {
     background: #fff;
