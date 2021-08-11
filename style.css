@@ -300,22 +300,17 @@
     
 }
 .project-desc h3 a {
+    background-image: linear-gradient(90deg,#e0ebeb, #293d3d);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms ease;
     text-decoration: none;
     color: #fff;    
     cursor: pointer;
 }
-.project-desc h3 a:after {
-    content: '';
-    display: block;
-    margin: auto;
-    height: 3px;
-    width: 0px;
-    background: transparent;
-    transition: width .5s ease, background-color .5s ease;
-}
-.project-desc h3 a:hover::after {
-    width: 30%;
-    background: #fff;
+.project-desc h3 a:hover{
+    background-size: 100% 3px;
 }
 hr {
     background: #fff;
