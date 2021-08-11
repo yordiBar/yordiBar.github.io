@@ -36,7 +36,7 @@
 
     </div>
     <div>
-        <button onclick="scrollToTop()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+        <button onclick="scrollToTop()" id="upBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
     </div>
     <section id="banner">
         <img src="images/logo-img1.jpg" class="logo">
@@ -236,7 +236,7 @@
         var menuBtn = document.getElementById("menuBtn");
         var sidebar = document.getElementById("sidebar");
         var closeBtn = document.getElementById("closeBtn");
-        var mybutton = document.getElementById("myBtn");
+        var upbutton = document.getElementById("upBtn");
 
         sidebar.style.left = "-100%";
         menuBtn.onclick = function () {
@@ -262,9 +262,9 @@
         // When user scrolls page down by 20px the "Top" button will appear
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
+                upbutton.style.display = "block";
             } else {
-                mybutton.style.display = "none";
+                upbutton.style.display = "none";
             }
         }
 
